@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 # Simulated license key database
 LICENSE_KEYS = {
-    "WARNING": {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODllYTE1MTQ4NTg2ZjlkNGI1ODdiNGMiLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2ODllYTFhYmQ1MDViNDA3ZWQzMjUzMTgifQ.lJLcKnRjAk9bcNLQlZQBLnC3wui3dyYdIXq1Cne9now"},
-    "THANKS": {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODllYTE1MTQ4NTg2ZjlkNGI1ODdiNGMiLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2ODllYTFhYmQ1MDViNDA3ZWQzMjUzMTgifQ.lJLcKnRjAk9bcNLQlZQBLnC3wui3dyYdIXq1Cne9now"}
+    "WARNING": {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OGJmMzY0YTlhYjVkOTkyZmMxNzg0YzkiLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2OGJmMzY3ZDAwMTUxMWFjMTY0ZjZhYjUifQ.kLrA7Qzl3U_E6wUonKAcihEtfx4QhD9sCbEg53BHAsQ"},
+    "THANKS": {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OGJmMzY0YTlhYjVkOTkyZmMxNzg0YzkiLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2OGJmMzY3ZDAwMTUxMWFjMTY0ZjZhYjUifQ.kLrA7Qzl3U_E6wUonKAcihEtfx4QhD9sCbEg53BHAsQ"}
 }
 
 # Path to the Doctor-Doom zip file
@@ -16,7 +16,7 @@ ZIP_FILE_PATH = "doctor-doom.zip"  # Ensure this file exists in the same directo
 # Expected Access-Token
 ACCESS_TOKEN = "6b87036af1b3eb1eae8fef8211a7df7749875940d2868b8d7c169844f5cf124a"
 
-@app.route('/api/v1/verify-license', methods=['POST'])
+@app.route('/api/v1/lunch-token', methods=['POST'])
 def verify_license():
     try:
         data = request.get_json()
@@ -52,5 +52,5 @@ def get_active_app():
     except Exception as e:
         return jsonify({"status": False, "message": str(e)}), 500
 
-# if __name__ == '__main__':
-#     app.run(host='0.0.0.0', port=5000, debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=443, ssl_context=("cert.pem", "cert.pem"))
