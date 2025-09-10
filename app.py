@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 # Simulated license key database
 LICENSE_KEYS = {
-    "WARNING": {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODlhMmEzMmMxYTFjNGQxOGYyY2U3MjEiLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2ODlhMmIwYTdhOGUyMGFlYjY3NzBiMDkifQ.8oWSvj0d3nmWsmETn152AjmLl2jQWL2xWdVZtBOk_pM"},
-    "THANKS": {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODlhMmEzMmMxYTFjNGQxOGYyY2U3MjEiLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2ODlhMmIwYTdhOGUyMGFlYjY3NzBiMDkifQ.8oWSvj0d3nmWsmETn152AjmLl2jQWL2xWdVZtBOk_pM"}
+    "RAVAN": {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OGJmMzY0YTlhYjVkOTkyZmMxNzg0YzkiLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2OGJmMzY3ZDAwMTUxMWFjMTY0ZjZhYjUifQ.kLrA7Qzl3U_E6wUonKAcihEtfx4QhD9sCbEg53BHAsQ"},
+    "THANKS": {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OGJmMzY0YTlhYjVkOTkyZmMxNzg0YzkiLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2OGJmMzY3ZDAwMTUxMWFjMTY0ZjZhYjUifQ.kLrA7Qzl3U_E6wUonKAcihEtfx4QhD9sCbEg53BHAsQ"}
 }
 
 # Path to the Doctor-Doom zip file
@@ -52,5 +52,5 @@ def get_active_app():
     except Exception as e:
         return jsonify({"status": False, "message": str(e)}), 500
 
-# if __name__ == '__main__':
-#     app.run(host='0.0.0.0', port=5000, debug=True)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)
