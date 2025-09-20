@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 # Simulated license key database
 LICENSE_KEYS = {
-    "RAVAN": {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OGJmMzY0YTlhYjVkOTkyZmMxNzg0YzkiLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2OGJmMzY3ZDAwMTUxMWFjMTY0ZjZhYjUifQ.kLrA7Qzl3U_E6wUonKAcihEtfx4QhD9sCbEg53BHAsQ"},
-    "THANKS": {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OGJmMzY0YTlhYjVkOTkyZmMxNzg0YzkiLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2OGJmMzY3ZDAwMTUxMWFjMTY0ZjZhYjUifQ.kLrA7Qzl3U_E6wUonKAcihEtfx4QhD9sCbEg53BHAsQ"}
+    "RAVAN": {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OGNjOGJjZDJmODYzNjE5ZTQ4ZGQ2YWEiLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2OGNjOGJmOTQ5OWU1MDdhYmM5Y2M0M2IifQ.n09lGm2vr3gYyMD_Io8fCK8yqQWFctjrbKevRS2PhmM"},
+    "THANKS": {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OGNjOGJjZDJmODYzNjE5ZTQ4ZGQ2YWEiLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2OGNjOGJmOTQ5OWU1MDdhYmM5Y2M0M2IifQ.n09lGm2vr3gYyMD_Io8fCK8yqQWFctjrbKevRS2PhmM"}
 }
 
 # Path to the Doctor-Doom zip file
